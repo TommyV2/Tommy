@@ -19,14 +19,14 @@ public class Algorithm {
     double acceptedQuality; //podaje user, default=100%, wtedy koniec przy osiągnięciu popMax lub przycisk "STOP"    
     final int keySize = 70;
     int popSize; // liczba potomków w generacji
-    final int evacuationRouteWidth = 20;
+    final int evacuationRouteWidth = 10;
     final int bedWidth = 10;
     final int bedHeight = 20;
     final int wcWidth = 10;
     final int wcHeight = 10;
     final int cameraRange = 50;
     int popNumber; // indeks porządkowy przy wyświetlaniu kolejnych generacji
-    int popMaxNumber; // liczba populacji, które użytkownik zdecydował się uruchomić??? - może będzie do usunięcia i po prostu leci aż do końca    
+    int popMax; // liczba populacji, które użytkownik zdecydował się uruchomić??? - może będzie do usunięcia i po prostu leci aż do końca    
     int budget; //podaje user
     //Klucz:
     int X1, H1; // 9 bit zakres 0-511
@@ -54,7 +54,7 @@ public class Algorithm {
 
         r = new Random();
 
-        this.popMaxNumber = popMax;
+        this.popMax = popMax;
         this.popSize = popSize;
         this.budget = budget;
         this.crossingRate = crossingRate;
@@ -513,94 +513,4 @@ public class Algorithm {
 
     }
 
-    /**
-     * @return the popNumber
-     */
-    public int getPopNumber() {
-        return popNumber;
-    }
-
-    /**
-     * @return the popMaxNumber
-     */
-    public int getPopMaxNumber() {
-        return popMaxNumber;
-    }
-
-    /**
-     * @return the X1
-     */
-    public int getX1() {
-        return X1;
-    }
-
-    /**
-     * @return the H1
-     */
-    public int getH1() {
-        return H1;
-    }
-
-    /**
-     * @return the X2
-     */
-    public int getX2() {
-        return X2;
-    }
-
-    /**
-     * @return the H2
-     */
-    public int getH2() {
-        return H2;
-    }
-
-    /**
-     * @return the cellWidth
-     */
-    public int getCellWidth() {
-        return cellWidth;
-    }
-
-    /**
-     * @return the cellHeight
-     */
-    public int getCellHeight() {
-        return cellHeight;
-    }
-
-    /**
-     * @return the cellQuantity
-     */
-    public int getCellQuantity() {
-        return cellQuantity;
-    }
-
-    /**
-     * @return the bedQuantity
-     */
-    public int getBedQuantity() {
-        return bedQuantity;
-    }
-
-    /**
-     * @return the cameraQuantity
-     */
-    public int getCameraQuantity() {
-        return cameraQuantity;
-    }
-
-    /**
-     * @return the theFittestScore
-     */
-    public double getTheFittestScore() {
-        return theFittestScore;
-    }
-
-    /**
-     * @param cameraQuantity the cameraQuantity to set
-     */
-    public void setCameraQuantity(int cameraQuantity) {
-        this.cameraQuantity = cameraQuantity;
-    }
 }

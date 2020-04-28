@@ -14,6 +14,7 @@ import javax.swing.WindowConstants;
  * @author mjgaj
  */
 public class MainFrame extends JFrame {
+   //Zmiany!!
 
     private static final int X_POS = 50;
     private static final int Y_POS = 50;
