@@ -29,7 +29,7 @@ public class SettingsPanel extends JPanel{
         
         createButton("Back", RIGHT_ALIGNMENT, TOP_ALIGNMENT, event -> {
             setVisible(false);
-            //displayPrisonGeneratorPanel();
+            displayPrisonGeneratorPanel();
         });
     }
     
@@ -41,7 +41,7 @@ public class SettingsPanel extends JPanel{
         add(button);
     }
     
-    /*
+    
     public void displayPrisonGeneratorPanel() {
 
         setVisible(false);
@@ -54,6 +54,6 @@ public class SettingsPanel extends JPanel{
             frame.pack();
         });
 
-    }*/
+    }
     
 }
