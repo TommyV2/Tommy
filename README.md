@@ -16,3 +16,6 @@ Factors taken into account:
 
 -number of windows
 
+![image](https://user-images.githubusercontent.com/58606334/117126327-e7c5c980-ad9a-11eb-8aa8-773485927628.png)
+
+
